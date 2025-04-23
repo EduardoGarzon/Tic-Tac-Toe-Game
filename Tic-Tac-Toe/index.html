@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <header>
+        <H1>Tic Tac Toe Game</H1>
+    </header>
+    <main>
+        <div id="div-players">
+            <div id="div-define-player-one">
+                <label for="player-one-simbol">PLAYER ONE</label>
+                <select name="player-one-simbol" id="select-simbol-player-one">
+                    <option value="" selected disabled>Select Simbol</option>
+                    <option value="X" style="background-color: #B00000;">X</option>
+                    <option value="O" style="background-color: #0FB000;">O</option>
+                </select>
+            </div>
+
+            <div id="div-define-player-two">
+                <label for="player-two-simbol">PLAYER TWO</label>
+                <select name="player-two-simbol" id="select-simbol-player-two">
+                    <option value="" selected disabled>Select Simbol</option>
+                    <option value="X" style="background-color: #B00000;">X</option>
+                    <option value="O" style="background-color: #0FB000;">O</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="div-game-table">
+            <div class="div-line" id="div-line-1">
+                <div id="div-square-1"></div>
+                <div id="div-square-2"></div>
+                <div id="div-square-3"></div>
+            </div>
+            <div class="div-line" id="div-line-2">
+                <div id="div-square-4"></div>
+                <div id="div-square-5"></div>
+                <div id="div-square-6"></div>
+            </div>
+            <div class="div-line" id="#div-line-3">
+                <div id="div-square-7"></div>
+                <div id="div-square-8"></div>
+                <div id="div-square-9"></div>
+            </div>
+
+            <div id="div-start-button">
+                <button type="button" id="start-button">START</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

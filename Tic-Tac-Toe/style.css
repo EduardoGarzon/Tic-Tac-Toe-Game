@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    font-family: 'poppins', monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEEFF1;
+}
+
+main {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+#div-players {
+    font-size: medium;
+    position: absolute;
+    left: 5rem;
+    top: 3.7rem;
+    color: #EEEFF1;
+}
+
+div[id^="div-square"] {
+    background-color: #EEEFF1;
+    border: 2px solid #D6BE1F;
+    transition: background-color .3s, transform .3s, border .3s;
+}
+
+div[id^="div-square"]:hover {
+    transform: scale(1.1);
+    background-color: #D6BE1F;
+    border-color: #EEEFF1;
+    border-width: 3px;
+}
+
+div[id^="div-square"].player1 {
+    background-color: #B00000;
+    border-color: #EEEFF1;
+}
+
+div[id^="div-square"].player2 {
+    background-color: #0FB000;
+    border-color: #EEEFF1;
+}
+
+#div-define-player-one {
+    margin-bottom: 1rem;
+}
+
+select {
+    font-size: medium;
+    background-color: #EEEFF1;
+    width: 8rem;
+    border-radius: 4rem;
+    text-align: center;
+}
+
+option {
+    background-color: #EEEFF1;
+}
+
+#div-game-table {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-line {
+    display: flex;
+    min-width: 20rem;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+/* 
+    O - 0FB000 
+    X - B00000
+*/
+.div-line div {
+    background-color: #EEEFF1;
+    border: 3px solid #D6BE1F;
+    color: #141414;
+    min-width: 5rem;
+    min-height: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+#div-start-button {
+    margin-top: 3rem;
+}
+
+#start-button {
+    font-size: 1.5rem;
+    background-color: #D6BE1F;
+    color: #EEEFF1;
+    border: none;
+    padding: .2rem 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#start-button:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.1rem;
+    border: 3px solid #EEEFF1;
+}
