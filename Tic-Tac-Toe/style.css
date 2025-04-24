@@ -47,12 +47,20 @@ div[id^="div-square"]:hover {
     border-width: 3px;
 }
 
-div[id^="div-square"].player1 {
+div[id^="div-square"].player1_X {
     background-color: #B00000;
     border-color: #EEEFF1;
 }
+div[id^="div-square"].player1_O {
+    background-color: #0FB000;
+    border-color: #EEEFF1;
+}
 
-div[id^="div-square"].player2 {
+div[id^="div-square"].player2_X {
+    background-color: #B00000;
+    border-color: #EEEFF1;
+}
+div[id^="div-square"].player2_O {
     background-color: #0FB000;
     border-color: #EEEFF1;
 }
@@ -124,4 +132,16 @@ option {
     transform: scale(1.1);
     letter-spacing: 0.1rem;
     border: 3px solid #EEEFF1;
+}
+
+#div-result {
+    display: none;
+    position: absolute;
+    right: 8rem;
+    top: 3.7rem;
+    border: 2px solid #EEEFF1;
+    padding: 1rem;
+    color: #EEEFF1;
+    font-size: large;
+    border-radius: 5rem;
 }
